@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <meta name="description" content="La Barbería de Vergara. Peluquería de caballeros en Madrid. Reserva tu cita o visita nuestra web.">
+  <title>La Barbería de Vergara | Reserva tu cita</title>
+  <style>
+    :root { --ink:#101820; --paper:#f8f5ef; --muted:#6b6b6b; --line:rgba(16,24,32,.12); }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100svh; color:var(--ink);
+      background:radial-gradient(ellipse at 15% 0%,rgba(181,38,54,.08),transparent 34rem),
+                 radial-gradient(ellipse at 100% 100%,rgba(24,61,105,.09),transparent 34rem),var(--paper);
+      font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      display:flex; justify-content:center; padding:28px 18px 24px;
+    }
+    .wrap { width:100%; max-width:440px; margin:auto; }
+    .card { background:rgba(255,255,255,.9); border:1px solid rgba(16,24,32,.08); border-radius:28px;
+      padding:30px 24px 24px; text-align:center; box-shadow:0 22px 70px rgba(16,24,32,.10); }
+    .topline { width:70px; height:5px; border-radius:8px; margin:0 auto 23px;
+      background:linear-gradient(90deg,#b52636 0 33%,#fff 33% 66%,#183d69 66%); }
+    .logo { display:block; width:min(100%,330px); height:auto; margin:0 auto 19px; }
+    h1 { margin:0; font-family:Georgia,"Times New Roman",serif; font-size:clamp(27px,7vw,34px); line-height:1.04; letter-spacing:-.7px; }
+    .subtitle { margin:13px 0 0; color:var(--muted); font-size:14px; line-height:1.6; }
+    .location { display:inline-flex; align-items:center; gap:7px; margin:18px 0 24px; color:#4d5358; font-size:13px; }
+    .actions { display:grid; gap:12px; }
+    .btn { display:flex; align-items:center; justify-content:center; gap:11px; width:100%; min-height:60px; padding:15px 18px;
+      border-radius:14px; text-decoration:none; font-size:15px; font-weight:750; letter-spacing:.2px; transition:transform .18s ease,box-shadow .18s ease; }
+    .btn:hover { transform:translateY(-2px); box-shadow:0 9px 20px rgba(16,24,32,.13); }
+    .primary { background:var(--ink); color:#fff; box-shadow:0 7px 18px rgba(16,24,32,.15); }
+    .secondary { background:#fff; color:var(--ink); border:1px solid var(--line); }
+    .btn svg { width:20px; height:20px; flex:0 0 auto; }
+    .divider { height:1px; background:var(--line); margin:25px 0 19px; }
+    .note { color:var(--muted); font-size:12px; line-height:1.6; }
+    .social { display:inline-flex; align-items:center; gap:7px; color:#183d69; font-size:13px; font-weight:650; text-decoration:none; margin-top:16px; }
+    footer { text-align:center; color:#777; font-size:11px; margin:17px 0 0; letter-spacing:.3px; }
+    @media(prefers-reduced-motion:reduce) { *,*::before,*::after { transition:none!important; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" aria-label="La Barbería de Vergara">
+      <div class="topline"></div>
+      <img class="logo" src="logo.png" alt="LDV La Barbería de Vergara">
+      <h1>La Barbería de Vergara</h1>
+      <p class="subtitle">Tradición, estilo y cuidado personal.<br>Peluquería de caballeros en el Barrio de Salamanca.</p>
+      <div class="location">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Príncipe de Vergara, 67 · Madrid
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="https://booksy.com/es-es/dl/show-business/191686?utm_medium=c2c_referral" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3"/></svg>
+          RESERVAR MI CITA
+        </a>
+        <a class="btn secondary" href="https://www.labarberiadevergara.es/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10 15.3 15.3 0 0 1 4-10Z"/></svg>
+          VISITAR NUESTRA WEB
+        </a>
+      </div>
+      <div class="divider"></div>
+      <p class="note">Para una atención personalizada, trabajamos con cita previa.</p>
+      <a class="social" href="https://www.instagram.com/barberiadevergara/" target="_blank" rel="noopener noreferrer">Síguenos en Instagram <span aria-hidden="true">↗</span></a>
+    </section>
+    <footer>LA BARBERÍA DE VERGARA · MADRID</footer>
+  </main>
+</body>
+</html>
