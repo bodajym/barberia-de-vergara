@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>La Barbería de Vergara — maqueta de la nueva web</title>
+<meta name="description" content="Maqueta de propuesta para la nueva web de La Barbería de Vergara. No es la web oficial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#000000}
+a{color:inherit}a:hover{color:inherit}
+html{scroll-behavior:smooth}
+button,input{font-family:inherit}
+:focus-visible{outline:2px solid #8A8A86;outline-offset:4px}
+.cta-d,.cta-l{transition:transform .2s cubic-bezier(.2,.8,.2,1),background-color .2s,color .2s}
+.cta-d:hover{background-color:#D4D4CF!important;color:#000000}
+.cta-l:hover{background-color:#2E2E2C!important;color:#F5F5F3}
+.cta-d:active,.cta-l:active{transform:scale(.97)}
+.opt{transition:transform .16s cubic-bezier(.2,.8,.2,1),background-color .16s,color .16s,border-color .16s;cursor:pointer}
+.opt:hover{border-color:#000000!important}
+.opt:active{transform:scale(.97)}
+.opt[aria-pressed="true"]{background:#000000!important;color:#F5F5F3!important;border-color:#000000!important}
+.opt:disabled{opacity:.36;text-decoration:line-through;cursor:not-allowed}
+.opt:disabled:hover{border-color:#CFCFCA!important}
+.ghost{transition:background-color .2s,color .2s;cursor:pointer}
+.ghost:hover{background-color:#F5F5F3!important;color:#000000!important}
+.ghost-l{transition:background-color .2s,color .2s}
+.ghost-l:hover{background-color:#000000!important;color:#F5F5F3!important}
+.seg[data-on="true"]{background:#000000!important}
+.navlink{background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-size:0 1px;background-position:0 100%;transition:background-size .3s cubic-bezier(.2,.8,.2,1)}
+.navlink:hover{background-size:100% 1px}
+@keyframes pole{from{transform:translateY(-120px) skewY(-30deg)}to{transform:translateY(0) skewY(-30deg)}}
+@keyframes rise{from{transform:translateY(105%)}to{transform:translateY(0)}}
+@keyframes pop{0%{transform:scale(.94)}60%{transform:scale(1.02)}100%{transform:scale(1)}}
+.stripes{animation:pole 7s linear infinite}
+.line>span{display:block;animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.line:nth-child(2)>span{animation-delay:.1s}
+.line:nth-child(3)>span{animation-delay:.2s}
+.pop{animation:pop .45s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.stripes,.line>span,.pop{animation:none}
+.cta-d,.cta-l,.opt,.ghost,.ghost-l,.navlink{transition:none}
+}
+
+[hidden]{display:none!important}
+.demo-bar{background:#F5F5F3;color:#000;font:600 12px/1.4 'Archivo',Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:8px 16px}
+@media (max-width:640px){.navtxt{display:none}}
+</style>
+</head>
+<body>
+<p class="demo-bar" style="margin:0">Maqueta de propuesta · No es la web oficial · Las reservas son de demostración</p>
+
+
+<div style="font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; color: #F5F5F3; background: #000000; font-size: 17px; line-height: 1.5">
+
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; padding: 14px clamp(20px, 5vw, 80px); border-bottom: 1px solid #2E2E2C">
+<img src="assets/lbdv-logo.png" alt="LBDV, La Barbería de Vergara" style="display: block; height: 56px; width: auto">
+<nav style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px 26px; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase">
+<a class="navlink navtxt" href="#servicios" style="color: #F5F5F3; text-decoration: none; padding: 14px 0">Servicios</a>
+<a class="navlink navtxt" href="#equipo" style="color: #F5F5F3; text-decoration: none; padding: 14px 0">Equipo</a>
+<a class="navlink navtxt" href="#visitanos" style="color: #F5F5F3; text-decoration: none; padding: 14px 0">Visítanos</a>
+<a class="cta-d" href="#reserva" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; background: #F5F5F3; color: #000000; text-decoration: none; font-weight: 600">Reservar</a>
+</nav>
+</header>
+
+<section style="display: flex; align-items: stretch; gap: clamp(16px, 4vw, 64px); padding: clamp(48px, 8vw, 120px) clamp(20px, 5vw, 80px) clamp(40px, 6vw, 80px); background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.72) 55%, rgba(0,0,0,0.5) 100%), url(assets/local-2.jpg) center / cover no-repeat">
+<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: clamp(24px, 3vw, 44px)">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #D4D4CF">
+<span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 999px; border: 1px solid #F5F5F3; background: transparent" id="open-dot"></span><span id="open-label">Solo con cita previa</span></p>
+<h1 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 500; font-size: clamp(40px, 10.5vw, 144px); line-height: 1.04; letter-spacing: -0.01em; text-transform: uppercase">
+<span class="line" style="display: block; overflow: hidden"><span>Peluquería</span></span>
+<span class="line" style="display: block; overflow: hidden"><span>de caballeros</span></span>
+<span class="line" style="display: block; overflow: hidden"><span style="font-size: 0.4em; font-weight: 300; letter-spacing: 0.1em; color: #B8B8B4; padding-top: 0.5em">Barrio de Salamanca · Madrid</span></span>
+</h1>
+<p style="margin: 0; max-width: 32em; font-size: clamp(17px, 1.5vw, 20px); color: #D4D4CF">Cortes clásicos y modernos, barbas y afeitado a navaja en Príncipe de Vergara 67. Solo con cita previa: elige tu hora aquí, sin llamar.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px">
+<a class="cta-d" href="#reserva" style="display: inline-flex; align-items: center; min-height: 58px; padding: 0 34px; background: #F5F5F3; color: #000000; text-decoration: none; font-weight: 600; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase">Reservar cita</a>
+<a class="navlink" href="tel:+34914114317" style="color: #F5F5F3; text-decoration: none; padding: 12px 0; font-size: 16px">o llama al 91 411 43 17</a>
+</div>
+</div>
+<div aria-hidden="true" class="pole" style="flex: 0 0 clamp(28px, 5vw, 64px); position: relative; overflow: hidden; border-radius: 999px; border: 1px solid #F5F5F3; background: #000000; min-height: 320px">
+<div class="stripes" style="position: absolute; left: 0; right: 0; top: -180px; bottom: -180px; background: repeating-linear-gradient(180deg, #F5F5F3 0px, #F5F5F3 30px, #000000 30px, #000000 60px, #8A8A86 60px, #8A8A86 90px, #000000 90px, #000000 120px)"></div>
+</div>
+</section>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 0; border-top: 1px solid #2E2E2C; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #D4D4CF">
+<span style="padding: 18px clamp(20px, 5vw, 80px)">Lunes a viernes · 10:00 – 20:30</span>
+<span style="padding: 18px clamp(20px, 5vw, 80px)">Sábados · 10:00 – 13:30</span>
+<span style="padding: 18px clamp(20px, 5vw, 80px)">Última cita entre semana · 19:30</span>
+</div>
+
+<section id="reserva" style="padding: clamp(48px, 7vw, 104px) clamp(20px, 5vw, 80px); background: #F5F5F3; color: #000000">
+<div style="display: flex; flex-wrap: wrap; gap: clamp(24px, 5vw, 72px); max-width: 1280px; margin: 0 auto">
+<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 500; font-size: clamp(34px, 4.6vw, 60px); line-height: 1.05; text-transform: uppercase; text-wrap: balance">Reserve su hora</h2>
+<p style="margin: 0; color: #2E2E2C; max-width: 26em">Servicio, barbero y hora en cuatro pasos. La confirmación llega por WhatsApp y el recordatorio, el día antes.</p>
+<p style="margin: 0; font-size: 14px; color: #55554F; max-width: 28em">Demo en funcionamiento: los huecos son de ejemplo y no se envía nada.</p>
+</div>
+
+<div id="booking" aria-live="polite" style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px"></div>
+</div>
+</section>
+
+<section id="servicios" style="padding: clamp(56px, 8vw, 128px) clamp(20px, 5vw, 80px); background: #000000; color: #F5F5F3">
+<div style="display: flex; flex-direction: column; gap: clamp(36px, 5vw, 72px); max-width: 1280px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+<h2 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 500; font-size: clamp(38px, 7.4vw, 104px); line-height: 1.04; text-transform: uppercase">Servicios<br><span style="font-weight: 300; color: #B8B8B4">y precios</span></h2>
+<p style="margin: 0; max-width: 24em; color: #B8B8B4">Toda la carta a la vista, sin desplegables ni páginas aparte.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: clamp(32px, 4vw, 56px) clamp(32px, 5vw, 72px)">
+
+<div style="display: flex; flex-direction: column">
+<h3 style="margin: 0 0 8px; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase">Corte de pelo</h3>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Solo a tijera</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">21 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Solo a máquina</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">18 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>A máquina y a tijera</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">21 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>A navaja</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">26 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Con lavado y secado</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">23 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Los más jóvenes</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">18,50 €</span></div>
+</div>
+
+<div style="display: flex; flex-direction: column">
+<h3 style="margin: 0 0 8px; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase">Degradados</h3>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Desde el 0.0</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">25 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>A partir del 1.5</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">22 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Con el número 2</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">21 €</span></div>
+<h3 style="margin: 28px 0 8px; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase">Lavado y peinado</h3>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Lavado y peinado<br><span style="font-size: 14px; color: #B8B8B4">Con productos American Crew</span></span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">14 €</span></div>
+</div>
+
+<div style="display: flex; flex-direction: column">
+<h3 style="margin: 0 0 8px; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase">Barba, bigote y afeitado</h3>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Arreglo de barba sin marcar</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">15 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Barba marcada con máquina</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">18 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Arreglo de barba con afeitado</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">21 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Arreglo de bigote</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">9 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Afeitado con masaje<br><span style="font-size: 14px; color: #B8B8B4">A navaja con brocha, masaje con Floïd y after shave</span></span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">21 €</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #3A3A38"><span>Fricciones de colonia</span><span style="font-variant-numeric: tabular-nums; white-space: nowrap">9 €</span></div>
+</div>
+
+</div>
+<a class="cta-d" href="#reserva" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 58px; padding: 0 34px; background: #F5F5F3; color: #000000; text-decoration: none; font-weight: 600; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase">Reservar cita</a>
+</div>
+</section>
+
+<section id="equipo" style="padding: clamp(56px, 8vw, 128px) clamp(20px, 5vw, 80px); background: #F5F5F3; color: #000000">
+<div style="display: flex; flex-direction: column; gap: clamp(32px, 5vw, 64px); max-width: 1280px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+<h2 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 500; font-size: clamp(34px, 4.6vw, 60px); line-height: 1.05; text-transform: uppercase">El equipo</h2>
+<p style="margin: 0; max-width: 26em; color: #2E2E2C">Tres barberos. Elija al suyo y la web le enseña solo sus huecos.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: clamp(24px, 3vw, 40px)">
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 5; border: 1px dashed #55554F; color: #55554F; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; text-align: center; padding: 16px; box-sizing: border-box">[Retrato de Wilmer]</div>
+<h3 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 500; font-size: 40px; line-height: 1; text-transform: uppercase">Wilmer</h3>
+<p style="margin: 0; color: #2E2E2C; min-height: 3em">[Especialidad de Wilmer]</p>
+<a class="ghost-l" href="#reserva" data-barber="wilmer" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 1px solid #000000; color: #000000; text-decoration: none; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase">Reservar con Wilmer</a>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 5; border: 1px dashed #55554F; color: #55554F; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; text-align: center; padding: 16px; box-sizing: border-box">[Retrato de Manu]</div>
+<h3 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 500; font-size: 40px; line-height: 1; text-transform: uppercase">Manu</h3>
+<p style="margin: 0; color: #2E2E2C; min-height: 3em">[Especialidad de Manu]</p>
+<a class="ghost-l" href="#reserva" data-barber="manu" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 1px solid #000000; color: #000000; text-decoration: none; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase">Reservar con Manu</a>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 5; border: 1px dashed #55554F; color: #55554F; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; text-align: center; padding: 16px; box-sizing: border-box">[Retrato de Elvis]</div>
+<h3 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 500; font-size: 40px; line-height: 1; text-transform: uppercase">Elvis</h3>
+<p style="margin: 0; color: #2E2E2C; min-height: 3em">Especialista en barbas y bigotes. Domina también los cortes clásicos.</p>
+<a class="ghost-l" href="#reserva" data-barber="elvis" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 1px solid #000000; color: #000000; text-decoration: none; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase">Reservar con Elvis</a>
+</div>
+
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding-top: clamp(24px, 4vw, 48px); border-top: 1px solid #000000">
+<div style="overflow: hidden; aspect-ratio: 21 / 9; background: #000000"><img class="plx" src="assets/local-1.jpg" alt="Interior de La Barbería de Vergara: sillones de barbero, espejos y encimera de madera" loading="lazy" style="display: block; width: 100%; height: 118%; object-fit: cover"></div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px">
+<p style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase">El local · Príncipe de Vergara 67</p>
+<a class="navlink" href="https://www.instagram.com/barberiavergara" style="color: #000000; text-decoration: none; padding: 10px 0">Ver los trabajos en Instagram · @barberiavergara</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: clamp(56px, 8vw, 128px) clamp(20px, 5vw, 80px); background: #000000; color: #F5F5F3">
+<div style="display: flex; flex-direction: column; gap: clamp(36px, 5vw, 72px); max-width: 1280px; margin: 0 auto">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<h2 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 500; font-size: clamp(38px, 7.4vw, 104px); line-height: 1.04; text-transform: uppercase">La web trabaja.<br><span style="font-weight: 300; color: #B8B8B4">Vosotros cortáis.</span></h2>
+<p style="margin: 0; max-width: 36em; color: #D4D4CF; font-size: clamp(17px, 1.5vw, 20px)">Hoy la cita se pide por teléfono, con las manos ocupadas. Con esta web cada paso sale solo, desde la reserva hasta la siguiente visita.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: clamp(24px, 3vw, 40px)">
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 1px solid #F5F5F3">
+<h3 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 24px; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase">Al reservar</h3>
+<p style="margin: 0; color: #B8B8B4">Confirmación al instante por WhatsApp con día, hora y barbero. El hueco queda bloqueado.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 1px solid #F5F5F3">
+<h3 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 24px; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase">24 horas antes</h3>
+<p style="margin: 0; color: #B8B8B4">Recordatorio con un enlace para confirmar, cambiar la hora o cancelar sin llamar.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 1px solid #F5F5F3">
+<h3 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 24px; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase">Si alguien cancela</h3>
+<p style="margin: 0; color: #B8B8B4">La hora vuelve a aparecer en la web y se avisa a quien estaba en lista de espera.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 1px solid #F5F5F3">
+<h3 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 24px; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase">Después del corte</h3>
+<p style="margin: 0; color: #B8B8B4">Mensaje de gracias con el enlace para dejar una reseña en Google.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 1px solid #F5F5F3">
+<h3 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 24px; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase">A las [X] semanas</h3>
+<p style="margin: 0; color: #B8B8B4">Aviso de que ya toca repasar, con un botón para reservar otra vez en un toque.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="visitanos" style="padding: clamp(56px, 8vw, 128px) clamp(20px, 5vw, 80px); background: #F5F5F3; color: #000000">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(32px, 5vw, 72px); max-width: 1280px; margin: 0 auto">
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<h2 style="margin: 0; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 500; font-size: clamp(34px, 4.6vw, 60px); line-height: 1.05; text-transform: uppercase">Visítanos</h2>
+<p style="margin: 0; font-size: clamp(20px, 2vw, 26px); line-height: 1.3">C/ Príncipe de Vergara, 67<br>28006 Madrid</p>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px">
+<a class="navlink" href="tel:+34914114317" style="color: #000000; text-decoration: none; padding: 10px 0">91 411 43 17</a>
+<a class="navlink" href="mailto:hola@labarberiadevergara.es" style="color: #000000; text-decoration: none; padding: 10px 0; overflow-wrap: anywhere">hola@labarberiadevergara.es</a>
+</div>
+<a class="ghost-l" href="https://www.google.com/maps/search/?api=1&amp;query=La+Barber%C3%ADa+de+Vergara+Pr%C3%ADncipe+de+Vergara+67+Madrid" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 1px solid #000000; color: #000000; text-decoration: none; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase">Cómo llegar</a>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column">
+<h3 style="margin: 0 0 10px; font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 400; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase">Horario</h3>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 14px 0; border-top: 1px solid #000000">
+<span style="display: flex; align-items: center; gap: 10px">Lunes a viernes<span data-today="isWeekday" hidden style="padding: 2px 10px; background: #000000; color: #F5F5F3; font-size: 12px; letter-spacing: 0.08em; border-radius: 999px">Hoy</span></span>
+<span style="font-variant-numeric: tabular-nums">10:00 – 20:30</span>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 14px 0; border-top: 1px solid #CFCFCA">
+<span style="display: flex; align-items: center; gap: 10px">Sábado<span data-today="isSat" hidden style="padding: 2px 10px; background: #000000; color: #F5F5F3; font-size: 12px; letter-spacing: 0.08em; border-radius: 999px">Hoy</span></span>
+<span style="font-variant-numeric: tabular-nums">10:00 – 13:30</span>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 14px 0; border-top: 1px solid #CFCFCA">
+<span style="display: flex; align-items: center; gap: 10px">Domingo<span data-today="isSun" hidden style="padding: 2px 10px; background: #000000; color: #F5F5F3; font-size: 12px; letter-spacing: 0.08em; border-radius: 999px">Hoy</span></span>
+<span>Cerrado</span>
+</div>
+<p style="margin: 0; padding: 14px 0; border-top: 1px solid #CFCFCA; font-size: 15px; color: #55554F">Solo con cita previa. Última cita entre semana a las 19:30.</p>
+</div>
+</div>
+</section>
+
+<footer style="padding: clamp(48px, 7vw, 104px) clamp(20px, 5vw, 80px); background: #000000; color: #F5F5F3">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 40px; max-width: 1280px; margin: 0 auto">
+<div style="display: flex; flex-direction: column; gap: 28px; min-width: 0">
+<img src="assets/lbdv-logo.png" alt="LBDV, La Barbería de Vergara" style="display: block; width: min(440px, 100%); height: auto; margin-left: -6%">
+<a class="cta-d" href="#reserva" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 58px; padding: 0 34px; background: #F5F5F3; color: #000000; text-decoration: none; font-weight: 600; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase">Reservar cita</a>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 4px; color: #B8B8B4; font-size: 15px">
+<a class="navlink" href="https://www.instagram.com/barberiavergara" style="color: #F5F5F3; text-decoration: none; padding: 8px 0">Instagram</a>
+<a class="navlink" href="https://www.facebook.com/La-Barberia-de-Vergara-1614571935461003/" style="color: #F5F5F3; text-decoration: none; padding: 8px 0">Facebook</a>
+<span style="margin-top: 12px">Aviso legal · Privacidad · Cookies</span>
+<span style="font-size: 14px">Maqueta de propuesta de rediseño. Datos tomados de la web actual.</span>
+</div>
+</div>
+</footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+var S={step:1,service:null,barber:null,day:0,time:null,name:'',phone:'',error:'',done:false};
+var services=[['tijera','Corte a tijera','21 €'],['maquina','Corte a máquina','18 €'],['degradado','Degradado','desde 21 €'],['navaja','Corte a navaja','26 €'],['barba','Arreglo de barba','desde 15 €'],['afeitado','Afeitado con masaje','21 €']];
+var barbers=[['any','El primero libre','La web elige al barbero con hueco'],['wilmer','Wilmer','Barbero'],['manu','Manu','Barbero'],['elvis','Elvis','Barbas, bigotes y clásicos']];
+var wd=['dom','lun','mar','mié','jue','vie','sáb'];
+var days=[];var d=new Date();d.setDate(d.getDate()+1);
+while(days.length<6){if(d.getDay()!==0){days.push({label:wd[d.getDay()],num:d.getDate(),sat:d.getDay()===6});}d.setDate(d.getDate()+1);}
+var week=['10:00','10:30','11:00','11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30','18:00','18:30','19:00','19:30'];
+var sat=['10:00','10:30','11:00','11:30','12:00','12:30','13:00'];
+var labels={1:'Paso 1 de 4 · Servicio',2:'Paso 2 de 4 · Barbero',3:'Paso 3 de 4 · Día y hora',4:'Paso 4 de 4 · Sus datos'};
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function find(l,id){for(var i=0;i<l.length;i++){if(l[i][0]===id)return l[i];}return null;}
+function summary(){var p=[];var sv=find(services,S.service),bb=find(barbers,S.barber),dd=days[S.day];
+if(sv)p.push(sv[1]);if(bb)p.push(bb[0]==='any'?bb[1]:'con '+bb[1]);if(S.time&&dd)p.push(dd.label+' '+dd.num+' a las '+S.time);return p.join(' · ');}
+var OPT='background: #FFFFFF; color: #000000; border: 1px solid #CFCFCA;';
+function head(){var segs='';for(var n=1;n<=4;n++){segs+='<div class="seg" data-on="'+(n<=S.step)+'" style="height: 2px; background: #CFCFCA"></div>';}
+return '<div style="display: flex; flex-direction: column; gap: 10px"><div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span style="font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase">'+labels[S.step]+'</span>'+(S.step>1?'<button type="button" data-act="back" style="min-height: 44px; padding: 0 12px; background: transparent; border: 0; color: #000000; font-size: 15px; font-weight: 500; text-decoration: underline; cursor: pointer">Atrás</button>':'')+'</div><div aria-hidden="true" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px">'+segs+'</div><p style="margin: 0; font-size: 15px; color: #55554F; min-height: 1.5em">'+esc(summary())+'</p></div>';}
+function h3(t){return '<h3 style="margin: 0; font-size: 22px; font-weight: 500">'+t+'</h3>';}
+function view(){
+if(S.done){return '<div class="pop" role="status" style="display: flex; flex-direction: column; gap: 18px; padding: clamp(22px, 3vw, 40px); background: #000000; color: #F5F5F3"><div style="display: flex; align-items: center; gap: 14px"><svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#F5F5F3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto"><circle cx="20" cy="20" r="18"></circle><path d="M12 21l6 6 11-13"></path></svg><h3 style="margin: 0; font-family: \'Oswald\', \'Arial Narrow\', Impact, sans-serif; font-weight: 500; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.1; text-transform: uppercase">Cita reservada, '+esc(S.name)+'</h3></div><p style="margin: 0; font-size: 19px; font-weight: 500">'+esc(summary())+'</p><p style="margin: 0; color: #D4D4CF">Le esperamos en Príncipe de Vergara 67.</p><div style="display: flex; flex-direction: column; gap: 8px; padding-top: 18px; border-top: 1px solid #3A3A38"><p style="margin: 0; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #B8B8B4">Lo que la web haría ahora, sola</p><p style="margin: 0">Enviar la confirmación por WhatsApp al '+esc(S.phone)+'.</p><p style="margin: 0">Bloquear ese hueco en la agenda del barbero.</p><p style="margin: 0">Programar el recordatorio para 24 horas antes.</p></div><p style="margin: 0; font-size: 14px; color: #B8B8B4">Esto es una maqueta: no se ha enviado ni guardado nada.</p><button type="button" class="ghost" data-act="reset" style="align-self: flex-start; min-height: 48px; padding: 0 22px; background: transparent; color: #F5F5F3; border: 1px solid #F5F5F3; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase">Hacer otra reserva</button></div>';}
+var b='';
+if(S.step===1){b='<div style="display: flex; flex-direction: column; gap: 14px">'+h3('¿Qué le hacemos?')+'<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 10px">'+services.map(function(x){return '<button type="button" class="opt" data-act="service" data-id="'+x[0]+'" aria-pressed="'+(S.service===x[0])+'" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 64px; padding: 12px 20px; '+OPT+' text-align: left; font-size: 17px"><span style="font-weight: 600">'+x[1]+'</span><span style="font-weight: 500; font-variant-numeric: tabular-nums; white-space: nowrap">'+x[2]+'</span></button>';}).join('')+'</div><a class="navlink" href="#servicios" style="align-self: flex-start; color: #000000; text-decoration: none; padding: 10px 0; font-size: 15px">Ver la carta completa de servicios</a></div>';}
+if(S.step===2){b='<div style="display: flex; flex-direction: column; gap: 14px">'+h3('¿Con quién?')+'<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 10px">'+barbers.map(function(x){return '<button type="button" class="opt" data-act="barber" data-id="'+x[0]+'" aria-pressed="'+(S.barber===x[0])+'" style="display: flex; flex-direction: column; justify-content: center; gap: 2px; min-height: 72px; padding: 12px 20px; '+OPT+' text-align: left; font-size: 17px"><span style="font-weight: 600">'+x[1]+'</span><span style="font-size: 14px; opacity: 0.75">'+x[2]+'</span></button>';}).join('')+'</div></div>';}
+if(S.step===3){var times=days[S.day].sat?sat:week;b='<div style="display: flex; flex-direction: column; gap: 14px">'+h3('¿Cuándo le viene bien?')+'<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(84px, 100%), 1fr)); gap: 8px">'+days.map(function(x,i){return '<button type="button" class="opt" data-act="day" data-id="'+i+'" aria-pressed="'+(S.day===i)+'" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 68px; padding: 8px; '+OPT+' font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em"><span>'+x.label+'</span><span style="font-family: \'Oswald\', \'Arial Narrow\', Impact, sans-serif; font-weight: 500; font-size: 26px; line-height: 1.1; letter-spacing: 0">'+x.num+'</span></button>';}).join('')+'</div><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(84px, 100%), 1fr)); gap: 8px">'+times.map(function(t,i){var taken=(S.day*7+i*3)%5===0;return '<button type="button" class="opt" data-act="time" data-id="'+t+'" aria-pressed="'+(S.time===t)+'"'+(taken?' disabled':'')+' style="min-height: 48px; padding: 8px; '+OPT+' font-size: 16px; font-weight: 500; font-variant-numeric: tabular-nums">'+t+'</button>';}).join('')+'</div><p style="margin: 0; font-size: 14px; color: #55554F">Las horas tachadas ya están cogidas. Los sábados solo hay citas por la mañana.</p></div>';}
+if(S.step===4){var IN='min-height: 54px; padding: 0 14px; font-size: 17px; color: #000000; background: #FFFFFF; border: 1px solid #000000; border-radius: 0; box-sizing: border-box; width: 100%';var LB='font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase';
+b='<form id="bk-form" novalidate style="display: flex; flex-direction: column; gap: 18px">'+h3('¿A nombre de quién?')+'<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 14px"><div style="display: flex; flex-direction: column; gap: 6px"><label for="bk-name" style="'+LB+'">Nombre</label><input id="bk-name" type="text" autocomplete="given-name" value="'+esc(S.name)+'" style="'+IN+'"></div><div style="display: flex; flex-direction: column; gap: 6px"><label for="bk-phone" style="'+LB+'">Móvil para el WhatsApp</label><input id="bk-phone" type="tel" inputmode="tel" autocomplete="tel" value="'+esc(S.phone)+'" style="'+IN+'"></div></div>'+(S.error?'<p role="alert" style="margin: 0; padding: 12px 14px; border: 1px solid #A3121F; color: #A3121F; font-weight: 500; font-size: 15px">'+esc(S.error)+'</p>':'')+'<button type="submit" class="cta-l" style="align-self: flex-start; min-height: 58px; padding: 0 34px; background: #000000; color: #F5F5F3; border: 0; font-weight: 600; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer">Confirmar reserva</button></form>';}
+return head()+b;}
+var root=document.getElementById('booking');
+function draw(){root.innerHTML=view();}
+root.addEventListener('click',function(e){var t=e.target.closest('[data-act]');if(!t||t.disabled)return;var a=t.getAttribute('data-act'),id=t.getAttribute('data-id');
+if(a==='back'){S.step=Math.max(1,S.step-1);S.error='';}
+if(a==='service'){S.service=id;S.step=2;}
+if(a==='barber'){S.barber=id;S.step=3;}
+if(a==='day'){S.day=parseInt(id,10);S.time=null;}
+if(a==='time'){S.time=id;S.step=4;}
+if(a==='reset'){S={step:1,service:null,barber:null,day:0,time:null,name:'',phone:'',error:'',done:false};}
+draw();});
+root.addEventListener('input',function(e){if(e.target.id==='bk-name')S.name=e.target.value;if(e.target.id==='bk-phone')S.phone=e.target.value;});
+root.addEventListener('submit',function(e){e.preventDefault();var nm=S.name.trim(),dg=S.phone.replace(/\D/g,'');
+if(!nm){S.error='Escriba su nombre para apuntar la cita.';}else if(dg.length<9){S.error='El móvil necesita al menos 9 cifras.';}else{S.name=nm;S.error='';S.done=true;}draw();
+if(S.error){var f=document.getElementById(!nm?'bk-name':'bk-phone');if(f)f.focus();}});
+document.querySelectorAll('[data-barber]').forEach(function(a){a.addEventListener('click',function(){S.barber=a.getAttribute('data-barber');S.done=false;S.time=null;S.error='';S.step=S.service?3:1;draw();});});
+draw();
+
+// horario en vivo (hora de Madrid)
+try{var now=new Date(),p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Madrid',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(now),m={};p.forEach(function(x){m[x.type]=x.value;});
+var dow=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(m.weekday),mins=(parseInt(m.hour,10)%24)*60+parseInt(m.minute,10);
+var wk=dow>=1&&dow<=5,st=dow===6,open=(wk&&mins>=600&&mins<1230)||(st&&mins>=600&&mins<810);
+document.getElementById('open-label').textContent=open?('Abierto ahora · hasta las '+(st?'13:30':'20:30')):'Cerrado ahora · la reserva online no cierra';
+if(open)document.getElementById('open-dot').style.background='#F5F5F3';
+var key=wk?'isWeekday':(st?'isSat':'isSun');var el=document.querySelector('[data-today="'+key+'"]');if(el)el.hidden=false;}catch(e){}
+
+// movimiento con GSAP: solo si carga y el usuario no pide menos movimiento
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(window.gsap&&window.ScrollTrigger&&!reduce){gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray('section h2').forEach(function(el){gsap.from(el,{yPercent:35,opacity:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',once:true}});});
+gsap.from('#servicios [style*="border-top: 1px solid #3A3A38"]',{opacity:0,y:14,duration:.5,stagger:.04,ease:'power2.out',scrollTrigger:{trigger:'#servicios',start:'top 65%',once:true}});
+gsap.fromTo('.plx',{yPercent:-13},{yPercent:0,ease:'none',scrollTrigger:{trigger:'.plx',start:'top bottom',end:'bottom top',scrub:true}});
+gsap.to('.pole',{yPercent:6,ease:'none',scrollTrigger:{trigger:'.pole',start:'top top',end:'bottom top',scrub:true}});}
+})();
+</script>
+</body>
+</html>
